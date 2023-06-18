@@ -1,0 +1,47 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+
+html
+    font-size: 62.5%
+    font-family: variables.$font-stack
+
+    body
+        background-color: #000
+
+        #container
+            width: 100%
+            max-width: 120rem
+            margin: 0 auto
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr))
+            grid-template-areas: "arthurguilherme" "sidebar" "main"
+            position: relative
+                    
+            #arthur-guilherme
+                font-size: variables.$sizeTitleH1
+                grid-area: arthurguilherme
+                padding: variables.$paddingDefault
+                @include mixins.tablet
+                    padding: 0
+        
+            #container-side-bar
+                grid-area: sidebar
+                text-align: center
+                padding: variables.$paddingDefault
+
+            #container-main
+                grid-area: main
+                text-align: center
+                padding: variables.$paddingDefault
+
+            @include mixins.tablet
+                grid-template-columns: 1fr 2fr
+                grid-template-areas: "arthurguilherme arthurguilherme" "sidebar main"
+                gap: 2rem

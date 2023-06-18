@@ -1,0 +1,38 @@
+@use '../mixins'
+@use '../variables'
+
+#container-sidebar
+    background-color: variables.$darkGrey
+    color: variables.$colorText
+    border: 2px solid blue
+    border-radius: variables.$containerBorderRadius
+    position: relative
+    padding: variables.$paddingDefault
+
+    @include mixins.flex-center
+    
+    
+    @include mixins.tablet
+        padding: 0
+
+    .container-sidebar__image
+        height: 20rem
+        width: 20rem
+        border-radius: variables.$containerBorderRadius
+        background-color: blue
+        position: relative
+        top: -4rem
+        
+    .container-sidebar__frontend
+        font-size: variables.$sizeText
+        font-weight: bold
+        padding: 1rem 2rem
+        margin-bottom: 1rem
+        @include mixins.border-bg
+
+    .btn
+        @include mixins.btn
+        font-weight: bolder
+        font-size: variables.$sizeText
+        margin: 2rem 0
+    

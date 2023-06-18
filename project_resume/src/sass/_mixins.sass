@@ -1,0 +1,26 @@
+@use 'variables'
+
+@mixin border-bg
+    border-radius: variables.$containerBorderRadius
+    background-color: variables.$color3Pallet
+    border: .1rem solid variables.$color5Pallet
+
+@mixin flex-center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    padding: 1rem 2rem
+    background-color: variables.$color2Pallet
+    color:  variables.$color5Pallet
+    border-radius: 20rem
+
+@mixin tablet
+    @media (min-width: 680px)
+        @content
+
+@mixin desktop
+    @media (min-width: 960px)
+        @content

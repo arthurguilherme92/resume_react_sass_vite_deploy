@@ -1,0 +1,30 @@
+@use '../mixins'
+@use '../variables'
+
+.container-sidebar__socialmedia-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 1rem 0
+        
+    .socialmedia-btn
+        font-size: variables.$sizeIconContact
+        font-weight: bold
+        padding: 1rem
+        position: relative
+        margin: 0 1rem
+        @include mixins.border-bg
+
+        &:hover
+            background-color: variables.$color5Pallet
+            > svg
+                color: variables.$color4Pallet
+
+    #linkedin
+        color: #0072b1
+
+    #github
+        color: #30363D
+
+    #whatsapp
+        color: #47C757

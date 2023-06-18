@@ -1,0 +1,23 @@
+@use '../mixins'
+@use '../variables'
+
+#container-mainpage
+    background-color: variables.$darkGrey
+    color: variables.$colorText
+    border: 2px solid blue
+    border-radius: variables.$containerBorderRadius
+    padding: 4rem
+    
+    section
+        margin-bottom: 2rem
+        border: 1px solid black
+
+        .title-box
+            background-color: red
+
+            .title-box__title
+                display: inline-box
+
+    
+    @include mixins.tablet
+        padding: variables.$paddingDefault

@@ -1,0 +1,21 @@
+@use '../mixins'
+@use '../variables'
+
+#information-container
+    padding: 1rem
+    margin: 0 1rem
+    min-width: 40%
+    @include mixins.border-bg
+
+    .information-card
+        border-bottom: .1rem solid variables.$color5Pallet
+        @include mixins.flex-center
+        flex-direction: row
+        justify-content: flex-start
+        
+
+        .information-card__text
+            @include mixins.flex-center
+            align-items: flex-start
+            padding: 1rem 0
+            margin-left: 1rem
