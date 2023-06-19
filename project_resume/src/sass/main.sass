@@ -20,7 +20,7 @@ html
             max-width: 120rem
             margin: 0 auto
             display: grid
-            grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr))
+            grid-template-columns: 1fr
             grid-template-areas: "arthurguilherme" "sidebar" "main"
             position: relative
                     
@@ -42,6 +42,6 @@ html
                 padding: variables.$paddingDefault
 
             @include mixins.tablet
-                grid-template-columns: 1fr 2fr
+                grid-template-columns: 30%fr 70%
                 grid-template-areas: "arthurguilherme arthurguilherme" "sidebar main"
                 gap: 2rem
