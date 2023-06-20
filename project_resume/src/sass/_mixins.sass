@@ -16,6 +16,15 @@
     background-color: variables.$color2Pallet
     color:  variables.$color5Pallet
     border-radius: 20rem
+    font-weight: bolder
+    font-size: clamp(1.6rem, 1.16vw, 1.8rem)
+
+
+@mixin divisor
+    content:""
+    background-color: variables.$colorText
+    height: 3px
+    width: 30%
 
 @mixin tablet
     @media (min-width: 650px)

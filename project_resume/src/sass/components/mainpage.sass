@@ -7,17 +7,33 @@
     border: 2px solid blue
     border-radius: variables.$containerBorderRadius
     padding: 4rem
-    
+
     section
-        margin-bottom: 2rem
-        border: 1px solid black
+        display: flex
+        flex-direction: column
 
-        .title-box
-            background-color: red
+    h2
+        font-size: variables.$sizeTitleH2
+        margin-bottom: 1.3rem
+        @include mixins.flex-center
+        justify-content: flex-start
+        flex-direction: row
+        gap: 1rem
 
-            .title-box__title
-                display: inline-box
+        &:after
+            @include mixins.divisor
+
+    p   
+        font-size: variables.$sizeText
+        text-align: justify
+        margin-bottom: 1rem
+        line-height: 2rem
+
+    .btn
+        @include mixins.btn
+        
 
     
+
     @include mixins.tablet
         padding: variables.$paddingDefault

@@ -12,10 +12,27 @@
         @include mixins.flex-center
         flex-direction: row
         justify-content: flex-start
-        
 
+        svg
+            width: 1.5rem
+            height: 1.5rem
+
+        #email-icon
+            color: #6ab5b9
+
+        #pin-icon
+            color: #c17ceb
+            
+        
         .information-card__text
             @include mixins.flex-center
             align-items: flex-start
             padding: 1rem 0
             margin-left: 1rem
+
+            h3
+                font-size: variables.$sizeText
+                margin-bottom: .5rem
+                font-weight: bolder
+
+        
