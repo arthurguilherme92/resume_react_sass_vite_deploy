@@ -1,9 +1,8 @@
-import "../sass/components/mainpage.sass"
-
 import AboutContainer from "./AboutContainer"
 import TechnologiesContainer from "./TechnologiesContainer"
 import ProjectsContainer from "./ProjectsContainer"
 
+import "../sass/components/mainpage.sass"
 
 const MainPage = () => {
   return (

@@ -1,2 +1,66 @@
 @use '../mixins'
 @use '../variables'
+
+.container-main__skills
+    margin-bottom: 1rem
+
+    .skills-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1rem
+
+        .skills-grid__card
+            @include mixins.flex-center
+            flex-direction: row
+            gap: 1rem
+            padding: 1rem
+            border: .1rem solid blue
+            border-radius: variables.$containerBorderRadius
+            
+            @include mixins.tablet
+            width: 48%
+            
+
+            svg
+                width: 30%
+                font-size: 8rem
+                @include mixins.tablet
+                width: 40%
+
+            .skills-grid__card__info
+                min-width: 50%
+                padding: .5rem
+
+
+
+            .card__info__title
+                color: variables.$colorText
+                font-size: variables.$sizeTitleH3
+                margin-bottom: 1rem
+
+    #html5
+        svg
+            color: #E44D26
+
+    #css3
+        svg
+            color: #1572b6
+
+    #javascript
+        svg
+            color: #f0db4f
+
+    #react
+        svg
+            color: #5ED3F3
+
+    #sass
+        svg
+            color: #C76494
+
+    #typescript
+        svg
+            color: #2F74C0
+            font-size: 6rem
+
+            

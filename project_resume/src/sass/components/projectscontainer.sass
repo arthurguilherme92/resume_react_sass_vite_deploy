@@ -1,9 +1,11 @@
 @use '../mixins'
 @use '../variables'
 
-.title-project
+.title-cta
     font-size: variables.$sizeTitleH3
-    color: red
+    
 
-.about-project
-    font-size: variables.$sizeText
+.btn-website
+    @include mixins.btn
+    max-width: 30%
+    text-align: center

@@ -6,17 +6,14 @@ const ProjectsContainer = () => {
         <div className="title-box">
             <h2 className="title-box__title">Projetos</h2>        </div>
         <div className="content-box">
-            <p className="title-project">
-                Title Project
-            </p>
-            <p className="about-project">
-                About Project
+            <p className="title-cta">
+                Veja em meu website os projetos que desenvolvi.
             </p>
         </div>
-        <a href="" className="btn">
+        <a href="" className="btn-website">
             Ver Projetos
         </a>
-    </section>
+        </section>
     );
   };
   
