@@ -10,7 +10,7 @@ const ProjectsContainer = () => {
                 Veja em meu website os projetos que desenvolvi.
             </p>
         </div>
-        <a href="" className="btn-website">
+        <a href="https://arthurguilherme.com/" target="_blank" className="btn-website">
             Ver Projetos
         </a>
         </section>

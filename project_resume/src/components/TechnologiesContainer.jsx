@@ -32,9 +32,6 @@ const TechnologiesContainer = () => {
                             {technology.icon}
                             <div className="skills-grid__card__info">
                                 <h3 className="card__info__title">{technology.name}</h3>
-                                <p className="card__info__description">
-                                    losdjaodjpadjalnd sapdj adkjasl kdj aslkdj alskdjalskdj saldj lak
-                                </p>
                             </div>
                         </div>
                     ))}
