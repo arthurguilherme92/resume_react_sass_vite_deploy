@@ -4,7 +4,7 @@ import '../sass/components/socialmedia.sass'
 
 const SocialMediaIcons = [
     { name: "linkedin", icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/arthurguilherme92/"}, 
-    { name: "github", icon: <FaGithub />, link: "https://github.com/arthurguilherme92"}, 
+    { name: "github", icon: <FaGithub />, link: "https://github.com/devarthurguilherme"}, 
     { name: "whatsapp", icon: <FaWhatsapp />,  link: "https://wa.link/cxnxvq"} 
 ]
 

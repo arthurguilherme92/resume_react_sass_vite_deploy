@@ -1,7 +1,7 @@
 import InformationContainer from './InformationContainer'
 import SocialMedia from './SocialMedia'
 import Arthur from '../assets/Arthur_Guilherme_front_end_developer.jpg'
-import Curriculum from '../assets/Curriculum Vitae - Arthur Guilherme -.pdf'
+import Curriculum from '../assets/Curriculum_Vitae_Arthur Guilherme.pdf'
 const SideBar = () => {
   return (
     <div id="container-sidebar">
